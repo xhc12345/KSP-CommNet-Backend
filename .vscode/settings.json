@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/KSP-CommNet-Core/Models"
+    ]
+}

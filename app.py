@@ -85,6 +85,11 @@ def get_image(imageName):
     for infile in glob.glob( os.path.join(imgFolder, imageName+'.*') ):
         return send_file(infile, mimetype='image/gif')
 
+@app.route('/planet/<planetName>', strict_slashes=False)
+def get_planet(planetName):
+    # TODO: check if planet is in db, return all data for this planet
+    pass
+
 @app.errorhandler(404)
 def invalidRequest(e):
     return jsonify(error=str(e)), 404
