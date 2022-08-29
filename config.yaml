@@ -1,0 +1,5 @@
+data:
+  path: data
+  celestialBodies:
+    fileName: KSP Celestial body stats
+    fileExtension: csv
